@@ -303,29 +303,63 @@ template {
 [hidden] {
   display: none; }
 
-.section-outer {
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
   background-color: #07162A; }
 
-.section-inner {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.container {
   width: 1180px;
   margin: 0 auto; }
 
-body {
-  font-family: 'Roboto', sans-serif; }
+.football-team-wrapper {
+  display: flex;
+  padding-top: 34px; }
 
-.section-header-wrapper {
-  padding-top: 34px;
-  display: flex; }
-  .section-header-wrapper__footballbrand {
-    flex-grow: 1;
+.football-team {
+  flex-grow: 1; }
+  .football-team .brand {
     text-align: center; }
-    .section-header-wrapper__footballbrand .name-brand {
+    .football-team .brand-name {
+      margin-top: 23px;
       font-size: 40px;
       font-weight: 400;
-      line-height: 47px;
-      color: #fff; }
-  .section-header-wrapper__score {
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 117px;
-    color: #fff; }
+      line-height: 47px; }
+  .football-team .players {
+    margin-top: 10px; }
+    .football-team .players .player {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      margin: 6px auto 0;
+      background: linear-gradient(to right, #09182D, #162032);
+      position: relative; }
+      .football-team .players .player::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: -6px;
+        left: 0;
+        background: linear-gradient(to right, #08182B, #1B4853, #061427); }
+      .football-team .players .player-num {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 25px;
+        color: #CED2DB;
+        padding: 20px 21px; }
+      .football-team .players .player-name {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #AAA092; }
+
+.footbal-score {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 117px; }
