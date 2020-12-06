@@ -1,0 +1,46 @@
+@import 'normalize.scss';
+
+// === Mixins ===
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+// === / Mixins ===
+
+// === common ===
+.section-outer {
+    background-color: #07162A;
+}
+.section-inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+body {
+    @include font-roboto();
+}
+// === / common ===
+
+
+// === header ===
+.section-header-wrapper {
+    padding-top: 34px;
+    display: flex;
+    &__footballbrand {
+        flex-grow: 1;
+        text-align: center;
+        .icon-brand {}
+        .name-brand {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 47px;
+            color: #fff;
+        }
+    }
+    &__score {
+        font-size: 100px;
+        font-weight: bold;
+        line-height: 117px;
+        color: #fff;
+    }
+}
+// === / header ===
