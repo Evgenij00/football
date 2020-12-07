@@ -2,11 +2,11 @@
 
 export const Brand = ({logo, name}) => {
     return (
-        <div class="brand">
-            <div class="brand-icon">
+        <div className='brand'>
+            <div className='brand-icon'>
                 <img src={logo} alt={name} />
             </div>
-            <div class="brand-name">
+            <div className='brand-name'>
                 {name}
             </div>
         </div>

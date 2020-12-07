@@ -4,6 +4,6 @@ import {data} from '../data'
 
 export const Score = () => {
     return (
-        <div class="footbal-score">{data.score[0]}:{data.score[1]}</div>
+        <div className='football-score'>{data.score[0]}:{data.score[1]}</div>
     );
 }
