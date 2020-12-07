@@ -1,6 +1,4 @@
-// import react from 'react'
-
-export const Brand = ({logo, name}) => {
+export function Brand({logo, name}) {
     return (
         <div className='brand'>
             <div className='brand-icon'>

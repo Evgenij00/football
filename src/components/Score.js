@@ -1,9 +1,5 @@
-// import react from 'react'
-
-import {data} from '../data'
-
-export const Score = () => {
+export function Score({score}) {
     return (
-        <div className='football-score'>{data.score[0]}:{data.score[1]}</div>
+        <div className='football-score'>{score[0]}:{score[1]}</div>
     );
 }

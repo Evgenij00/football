@@ -1,6 +1,4 @@
-import react from 'react'
-
-export const Player = ({player}) => {
+export function Player({player}) {
     return (
         <li className='player'>
             <div className='player-num'>{player.number}</div>

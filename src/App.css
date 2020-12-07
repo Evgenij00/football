@@ -1,0 +1,90 @@
+body {
+    background-color: #07162A;
+}
+  
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.football-team-wrapper {
+    display: flex;
+    padding-top: 34px;
+    padding-bottom: 80px;
+  }
+  
+  .container {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  
+  /* Team */
+  .football-team {
+    flex-grow: 1;
+  }
+  /* / Team */
+  
+  /* Brand */
+  .brand {
+    text-align: center;
+  }
+  
+  .brand-name {
+    margin-top: 23px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    color: #fff;
+  }
+  /* / Brand */
+  
+  /* Players */
+  .players {
+    margin-top: 10px;
+  }
+  /* / Players */
+  
+  /* Player */
+  .player {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 6px auto 0;
+    background: linear-gradient(to right, #09182D, #162032);
+    position: relative;
+  }
+  
+  .player::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: -6px;
+    left: 0;
+    background: linear-gradient(to right, #08182B, #1B4853, #061427);
+  }
+  
+  .player-num {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #CED2DB;
+    padding: 20px 21px;
+  }
+  
+  .player-name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #AAA092;
+  }
+  /* / Player */
+  
+  /* Score */
+  .football-score {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 117px;
+    color: #fff;
+  }
+  /* / Score */
